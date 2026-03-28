@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — AI Consulting Perth | Saizor</title>
+  <meta name="description" content="From initial audit to full AI strategy and implementation — Saizor supports Perth organisations at every stage of their AI journey." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .page-hero {
+      position: relative;
+      padding: 120px 0 80px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      text-align: center;
+    }
+    .page-hero h1 { margin-bottom: 20px; }
+    .page-hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 680px; margin: 0 auto; }
+
+    .services-list { display: flex; flex-direction: column; gap: 32px; margin-top: 48px; }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 32px;
+      align-items: start;
+      transition: var(--transition);
+    }
+    .service-card:hover { background: var(--card-hover); border-color: rgba(37,99,235,0.4); }
+    .service-card.flagship { border-color: rgba(37,99,235,0.5); background: rgba(37,99,235,0.06); }
+    .service-num {
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(37,99,235,0.3);
+      line-height: 1;
+      min-width: 48px;
+    }
+    .service-body h3 { font-size: 1.4rem; margin-bottom: 6px; }
+    .service-price {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--blue-light);
+      margin-bottom: 12px;
+    }
+    .service-body p { color: var(--text-muted); line-height: 1.7; }
+    .service-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37,99,235,0.2);
+      border: 1px solid rgba(37,99,235,0.4);
+      color: var(--blue-light);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .service-action { display: flex; align-items: flex-start; padding-top: 4px; }
+
+    @media (max-width: 768px) {
+      .service-card { grid-template-columns: 1fr; gap: 16px; padding: 28px 24px; }
+      .service-num { font-size: 2rem; }
+      .service-action { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor"/>
+            <rect x="17" y="1" width="4" height="4" rx="1" fill="currentColor"/>
+            <rect x="1" y="17" width="4" height="4" rx="1" fill="currentColor"/>
+            <rect x="17" y="17" width="4" height="4" rx="1" fill="currentColor"/>
+            <rect x="9" y="9" width="4" height="4" rx="1" fill="currentColor"/>
+            <line x1="3" y1="5" x2="3" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="3" y1="13" x2="3" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="19" y1="5" x2="19" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="19" y1="13" x2="19" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="5" y1="3" x2="9" y2="3" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="13" y1="3" x2="17" y2="3" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="5" y1="19" x2="9" y2="19" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="13" y1="19" x2="17" y2="19" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="11" y1="5" x2="11" y2="9" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="11" y1="13" x2="11" y2="17" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="5" y1="11" x2="9" y2="11" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="13" y1="11" x2="17" y2="11" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>Saizor</span>
+        </a>
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="audit.html">AI Audit</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-cta">
+          <a href="audit.html" class="btn btn-primary">Book Audit — $1,000</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="audit.html">AI Audit</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="audit.html" class="btn btn-primary">Book Audit — $1,000</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="circuit-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="hero-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        What We Offer
+      </div>
+      <h1>Our Services</h1>
+      <p>From initial audit to full AI strategy and implementation — we support you at every stage of your AI journey.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="services-list">
+
+        <div class="service-card flagship">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <div class="service-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Start Here
+            </div>
+            <h3>AI Maturity Audit</h3>
+            <div class="service-price">$1,000 AUD</div>
+            <p>Our flagship service. An independent, structured assessment of your organisation's AI readiness — scored across 5 dimensions with a traffic light heatmap, industry benchmark, opportunity report and 90-day roadmap. Delivered as a board-ready report and executive presentation. This is always where we start — we will never recommend building or buying AI until we have done this first.</p>
+          </div>
+          <div class="service-action">
+            <a href="audit.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>AI Audit Analytics</h3>
+            <div class="service-price">POA</div>
+            <p>AI-powered tools to process your audit data, identify patterns across your organisation and surface deeper insights than manual analysis can provide. Particularly valuable for larger organisations with multiple business units or complex operational structures where patterns and correlations need to be surfaced at scale.</p>
+          </div>
+          <div class="service-action">
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3>AI Strategy &amp; Roadmap</h3>
+            <div class="service-price">POA</div>
+            <p>A 12-month AI strategy aligned to your business goals, budget and team capability — built on the findings from your audit. We translate your audit results into a concrete, prioritised plan that your leadership team can execute with confidence. Includes vendor evaluation, build-vs-buy analysis and investment sequencing.</p>
+          </div>
+          <div class="service-action">
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-body">
+            <h3>AI System Design &amp; Build</h3>
+            <div class="service-price">POA</div>
+            <p>Custom AI solutions scoped to solve real, specific problems — but only after an audit has confirmed the need and defined the opportunity. We design and build AI systems that fit your existing workflows, data infrastructure and team capability. No off-the-shelf products sold here — everything is purpose-built for your organisation.</p>
+          </div>
+          <div class="service-action">
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-body">
+            <h3>AI Advisory &amp; Training</h3>
+            <div class="service-price">POA</div>
+            <p>Ongoing advisory support, executive briefings, vendor evaluation and team AI literacy workshops. Whether your leadership team needs to stay current on AI developments, your board needs a plain-language briefing, or your operations team needs hands-on training with new AI tools — we provide the support to keep your organisation moving forward.</p>
+          </div>
+          <div class="service-action">
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTE -->
+  <section class="section" style="background: var(--navy-light); padding: 48px 0;">
+    <div class="container">
+      <div class="why-card" style="max-width:760px;margin:0 auto;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.3);border-radius:var(--radius-lg);padding:36px 40px;">
+        <div class="why-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div>
+          <h3 style="margin-bottom:10px;">Why We Always Start With an Audit</h3>
+          <p style="color:var(--text-muted);line-height:1.7;">Most AI firms will sell you a strategy or a system before they have properly assessed whether you need one. We do the opposite. The AI Maturity Audit is the foundation of everything we do — because without an honest, independent baseline, any AI investment is a guess. Services 02 through 05 are available following an audit, when there is a clear, evidence-based case for them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section final-cta">
+    <div class="circuit-overlay" style="opacity:0.4;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label">Get Started</div>
+      <h2>Ready to Start With an Audit?</h2>
+      <p>Book your AI Maturity Audit for a flat fee of $1,000 AUD — the smartest first step your organisation can take.</p>
+      <a href="audit.html" class="btn btn-primary btn-lg">Book Your AI Audit — $1,000</a>
+      <div class="final-cta-contact">
+        <a href="tel:+61484311234">+61 (0) 484 311 234</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:omer.bashir@outlook.com">omer.bashir@outlook.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor"/>
+              <rect x="17" y="1" width="4" height="4" rx="1" fill="currentColor"/>
+              <rect x="1" y="17" width="4" height="4" rx="1" fill="currentColor"/>
+              <rect x="17" y="17" width="4" height="4" rx="1" fill="currentColor"/>
+              <rect x="9" y="9" width="4" height="4" rx="1" fill="currentColor"/>
+              <line x1="3" y1="5" x2="3" y2="9" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="3" y1="13" x2="3" y2="17" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="19" y1="5" x2="19" y2="9" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="19" y1="13" x2="19" y2="17" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="5" y1="3" x2="9" y2="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="3" x2="17" y2="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="5" y1="19" x2="9" y2="19" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="19" x2="17" y2="19" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="11" y1="5" x2="11" y2="9" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="11" y1="13" x2="11" y2="17" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="5" y1="11" x2="9" y2="11" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="13" y1="11" x2="17" y2="11" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span>Saizor</span>
+          </a>
+          <p class="footer-tagline">Audit First. Build Smart. — Perth, Western Australia</p>
+          <div class="footer-contact">
+            <a href="tel:+61484311234">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              +61 (0) 484 311 234
+            </a>
+            <a href="mailto:omer.bashir@outlook.com">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              omer.bashir@outlook.com
+            </a>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="audit.html">AI Audit</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="audit.html">AI Maturity Audit</a></li>
+            <li><a href="services.html">AI Strategy</a></li>
+            <li><a href="services.html">AI System Build</a></li>
+            <li><a href="services.html">AI Advisory</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Saizor. All rights reserved. Perth, WA, Australia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
