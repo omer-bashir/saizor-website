@@ -24,7 +24,6 @@
       align-items: start;
     }
 
-    /* Contact details sidebar */
     .contact-details { display: flex; flex-direction: column; gap: 20px; }
     .contact-detail-item {
       display: flex;
@@ -52,7 +51,6 @@
     .contact-detail-text p, .contact-detail-text a { font-size: 0.975rem; color: var(--white); font-weight: 500; }
     .contact-detail-text a:hover { color: var(--blue-light); }
 
-    /* Form */
     .contact-form-wrap {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -89,7 +87,6 @@
     .form-submit { margin-top: 8px; }
     .form-submit .btn { width: 100%; justify-content: center; }
 
-    /* Success message */
     .form-success {
       display: none;
       text-align: center;
@@ -135,7 +132,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-inner">
@@ -168,25 +164,16 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
-        <div class="navbar-cta">
-          <a href="audit.html" class="btn btn-primary">Book Audit — $1,000</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+        <div class="navbar-cta"><a href="audit.html" class="btn btn-primary">Book Audit — $1,000</a></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="audit.html">AI Audit</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a><a href="audit.html">AI Audit</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a>
       <a href="audit.html" class="btn btn-primary">Book Audit — $1,000</a>
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="page-hero">
     <div class="circuit-overlay"></div>
     <div class="hero-glow"></div>
@@ -200,72 +187,52 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
   <section class="section">
     <div class="container">
       <div class="contact-layout">
-
-        <!-- Sidebar -->
         <div>
           <div class="contact-details">
             <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <h4>Phone</h4>
-                <a href="tel:+61484311234">+61 (0) 484 311 234</a>
-              </div>
+              <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div class="contact-detail-text"><h4>Phone</h4><a href="tel:+61484311234">+61 (0) 484 311 234</a></div>
             </div>
             <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <h4>Email</h4>
-                <a href="mailto:omer.bashir@outlook.com">omer.bashir@outlook.com</a>
-              </div>
+              <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div class="contact-detail-text"><h4>Email</h4><a href="mailto:omer.bashir@outlook.com">omer.bashir@outlook.com</a></div>
             </div>
             <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <h4>Location</h4>
-                <p>Perth, Western Australia</p>
-              </div>
+              <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+              <div class="contact-detail-text"><h4>Location</h4><p>Perth, Western Australia</p></div>
             </div>
             <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <h4>Business Hours</h4>
-                <p>Monday to Friday<br>9am – 5pm AWST</p>
-              </div>
+              <div class="contact-detail-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div class="contact-detail-text"><h4>Business Hours</h4><p>Monday to Friday<br>9am – 5pm AWST</p></div>
             </div>
           </div>
         </div>
 
-        <!-- Form -->
         <div class="contact-form-wrap">
-          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form id="contactForm" action="https://formspree.io/f/mwvwvwob" method="POST" novalidate>
             <div class="form-grid">
-              <div class="form-group">
+              <div class="form-group" id="group-name">
                 <label for="name">Full Name <span>*</span></label>
                 <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+                <span class="field-error-msg">Please enter your full name.</span>
               </div>
-              <div class="form-group">
+              <div class="form-group" id="group-company">
                 <label for="company">Company Name <span>*</span></label>
                 <input type="text" id="company" name="company" placeholder="Acme Pty Ltd" required />
+                <span class="field-error-msg">Please enter your company name.</span>
               </div>
-              <div class="form-group">
+              <div class="form-group" id="group-industry">
                 <label for="industry">Industry <span>*</span></label>
                 <input type="text" id="industry" name="industry" placeholder="e.g. Mining, Logistics, Construction" required />
+                <span class="field-error-msg">Please enter your industry.</span>
               </div>
-              <div class="form-group">
+              <div class="form-group" id="group-email">
                 <label for="email">Email Address <span>*</span></label>
                 <input type="email" id="email" name="email" placeholder="jane@company.com.au" required />
+                <span class="field-error-msg">Please enter a valid email address.</span>
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
@@ -282,13 +249,15 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
-              <div class="form-group full">
+              <div class="form-group full" id="group-message">
                 <label for="message">Message <span>*</span></label>
                 <textarea id="message" name="message" placeholder="Tell us a little about your organisation and what you are looking for" required></textarea>
+                <span class="field-error-msg">Please enter a message.</span>
               </div>
             </div>
+            <div id="formError" class="form-error-banner" hidden></div>
             <div class="form-submit">
-              <button type="submit" class="btn btn-primary btn-lg">
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-lg">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 Send Message
               </button>
@@ -296,9 +265,7 @@
           </form>
 
           <div class="form-success" id="formSuccess">
-            <div class="success-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
+            <div class="success-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
             <h3>Message Sent</h3>
             <p>Thank you for getting in touch. We will respond within 1 business day.</p>
           </div>
@@ -314,113 +281,144 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="navbar-logo">
             <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor"/>
-              <rect x="17" y="1" width="4" height="4" rx="1" fill="currentColor"/>
-              <rect x="1" y="17" width="4" height="4" rx="1" fill="currentColor"/>
-              <rect x="17" y="17" width="4" height="4" rx="1" fill="currentColor"/>
-              <rect x="9" y="9" width="4" height="4" rx="1" fill="currentColor"/>
-              <line x1="3" y1="5" x2="3" y2="9" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="3" y1="13" x2="3" y2="17" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="19" y1="5" x2="19" y2="9" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="19" y1="13" x2="19" y2="17" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="5" y1="3" x2="9" y2="3" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="13" y1="3" x2="17" y2="3" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="5" y1="19" x2="9" y2="19" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="13" y1="19" x2="17" y2="19" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="11" y1="5" x2="11" y2="9" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="11" y1="13" x2="11" y2="17" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="5" y1="11" x2="9" y2="11" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="13" y1="11" x2="17" y2="11" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor"/><rect x="17" y="1" width="4" height="4" rx="1" fill="currentColor"/><rect x="1" y="17" width="4" height="4" rx="1" fill="currentColor"/><rect x="17" y="17" width="4" height="4" rx="1" fill="currentColor"/><rect x="9" y="9" width="4" height="4" rx="1" fill="currentColor"/>
+              <line x1="3" y1="5" x2="3" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="3" y1="13" x2="3" y2="17" stroke="currentColor" stroke-width="1.5"/><line x1="19" y1="5" x2="19" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="19" y1="13" x2="19" y2="17" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="3" x2="9" y2="3" stroke="currentColor" stroke-width="1.5"/><line x1="13" y1="3" x2="17" y2="3" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="19" x2="9" y2="19" stroke="currentColor" stroke-width="1.5"/><line x1="13" y1="19" x2="17" y2="19" stroke="currentColor" stroke-width="1.5"/><line x1="11" y1="5" x2="11" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="11" y1="13" x2="11" y2="17" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="11" x2="9" y2="11" stroke="currentColor" stroke-width="1.5"/><line x1="13" y1="11" x2="17" y2="11" stroke="currentColor" stroke-width="1.5"/>
             </svg>
             <span>Saizor</span>
           </a>
           <p class="footer-tagline">Audit First. Build Smart. — Perth, Western Australia</p>
           <div class="footer-contact">
-            <a href="tel:+61484311234">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              +61 (0) 484 311 234
-            </a>
-            <a href="mailto:omer.bashir@outlook.com">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              omer.bashir@outlook.com
-            </a>
+            <a href="tel:+61484311234"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>+61 (0) 484 311 234</a>
+            <a href="mailto:omer.bashir@outlook.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>omer.bashir@outlook.com</a>
           </div>
-          <div class="footer-social">
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-          </div>
+          <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div>
         </div>
-        <div class="footer-links">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="audit.html">AI Audit</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="audit.html">AI Maturity Audit</a></li>
-            <li><a href="services.html">AI Strategy</a></li>
-            <li><a href="services.html">AI System Build</a></li>
-            <li><a href="services.html">AI Advisory</a></li>
-          </ul>
-        </div>
+        <div class="footer-links"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="audit.html">AI Audit</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-links"><h4>Services</h4><ul><li><a href="audit.html">AI Maturity Audit</a></li><li><a href="services.html">AI Strategy</a></li><li><a href="services.html">AI System Build</a></li><li><a href="services.html">AI Advisory</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2025 Saizor. All rights reserved. Perth, WA, Australia</p>
-      </div>
+      <div class="footer-bottom"><p>© 2025 Saizor. All rights reserved. Perth, WA, Australia</p></div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      mobileMenu.classList.toggle('open');
-    });
+    (function () {
+      var form = document.getElementById('contactForm');
+      var successMsg = document.getElementById('formSuccess');
+      var errorBanner = document.getElementById('formError');
+      var submitBtn = document.getElementById('submitBtn');
+      if (!form || !successMsg || !errorBanner || !submitBtn) return;
 
-    // Form submission with Formspree AJAX + thank you message
-    const form = document.getElementById('contactForm');
-    const successMsg = document.getElementById('formSuccess');
+      var submitting = false;
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.style.display = 'none';
-          successMsg.style.display = 'block';
-        } else {
-          const json = await res.json();
-          alert(json.errors ? json.errors.map(e => e.message).join(', ') : 'Something went wrong. Please try again or email us directly.');
-        }
-      } catch {
-        alert('Unable to send message. Please email us at omer.bashir@outlook.com');
+      function showFormError(msg) {
+        errorBanner.textContent = msg;
+        errorBanner.hidden = false;
+        errorBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
-    });
+
+      function clearFormError() {
+        errorBanner.hidden = true;
+        errorBanner.textContent = '';
+      }
+
+      function setFieldError(groupId, hasError) {
+        var group = document.getElementById(groupId);
+        if (!group) return;
+        if (hasError) { group.classList.add('field-error'); }
+        else { group.classList.remove('field-error'); }
+      }
+
+      function validateForm() {
+        var firstError = null;
+        var name = document.getElementById('name');
+        var nameInvalid = !name || !name.value.trim();
+        setFieldError('group-name', nameInvalid);
+        if (nameInvalid && !firstError) firstError = name;
+
+        var company = document.getElementById('company');
+        var companyInvalid = !company || !company.value.trim();
+        setFieldError('group-company', companyInvalid);
+        if (companyInvalid && !firstError) firstError = company;
+
+        var industry = document.getElementById('industry');
+        var industryInvalid = !industry || !industry.value.trim();
+        setFieldError('group-industry', industryInvalid);
+        if (industryInvalid && !firstError) firstError = industry;
+
+        var email = document.getElementById('email');
+        var emailInvalid = !email || !email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+        setFieldError('group-email', emailInvalid);
+        if (emailInvalid && !firstError) firstError = email;
+
+        var message = document.getElementById('message');
+        var messageInvalid = !message || !message.value.trim();
+        setFieldError('group-message', messageInvalid);
+        if (messageInvalid && !firstError) firstError = message;
+
+        if (nameInvalid || companyInvalid || industryInvalid || emailInvalid || messageInvalid) {
+          if (firstError) firstError.focus();
+          return false;
+        }
+        return true;
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (submitting) return;
+        clearFormError();
+        if (!validateForm()) {
+          showFormError('Please fill in all required fields before submitting.');
+          return;
+        }
+        submitting = true;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending\u2026';
+        var controller = new AbortController();
+        var timeout = setTimeout(function () { controller.abort(); }, 15000);
+        try {
+          var res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+            signal: controller.signal
+          });
+          clearTimeout(timeout);
+          if (res.ok) {
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+          } else {
+            var msg = 'Something went wrong. Please try again or email us directly.';
+            try {
+              var json = await res.json();
+              if (json.errors && json.errors.length) { msg = json.errors.map(function (err) { return err.message; }).join(', '); }
+            } catch (_) {}
+            showFormError(msg);
+          }
+        } catch (err) {
+          clearTimeout(timeout);
+          if (err.name === 'AbortError') {
+            showFormError('The request timed out. Please check your connection and try again.');
+          } else {
+            showFormError('Unable to send message. Please email us at omer.bashir@outlook.com');
+          }
+        } finally {
+          submitting = false;
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Send Message';
+        }
+      });
+    })();
   </script>
 </body>
 </html>
