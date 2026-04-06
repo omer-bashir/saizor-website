@@ -3,6 +3,7 @@ import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import ChatWidget from './components/ChatWidget.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AuditPage from './pages/AuditPage.jsx';
 import ServicesPage from './pages/ServicesPage.jsx';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <ChatWidget />
       <Toaster />
     </Router>
   );

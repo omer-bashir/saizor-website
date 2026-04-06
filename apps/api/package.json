@@ -9,12 +9,15 @@
     "lint": "eslint . --quiet"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.0.1",
     "helmet": "^8.0.0",
     "morgan": "^1.10.0",
-    "pocketbase": "^0.25.0"
+    "pdf-parse": "^2.4.5",
+    "pocketbase": "^0.25.0",
+    "unpdf": "^1.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.0",
